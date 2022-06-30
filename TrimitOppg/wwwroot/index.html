@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="js/model.js"></script>
+    <script src="js/listView.js"></script>
+    <script src="js/singleView.js"></script>
+    <script src="js/addView.js"></script>
+    <script src="js/controller.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <div id="app"></div>
+
+    <script>
+        getSongs();
+        function updateView() {
+            if (model.app.page === 'list') updateViewList();
+        }
+    </script>
+</body>
+
+</html>
